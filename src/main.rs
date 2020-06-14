@@ -1,5 +1,10 @@
+mod gui;
+
 #[tokio::main]
 async fn main() -> Result<(), reqwest::Error> {
+    
+    // GUI stuff
+    gui::draw_window();
     // get user input per (https://users.rust-lang.org/t/how-to-get-user-input/5176/3)
     use std::io::{stdin,stdout,Write};
     let mut permit_id = String::new();
