@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-  background-color: linen;
-}
+   <head>
+      <style>
+         body {
+         background-color: AliceBlue;
+         }
+         h1 {
+         color: teal;
+         margin-left: 40px;
+         }
+      </style>
+   </head>
+   <body>
+      <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank">
+         <h2><strong>rustyriver</strong></h2>
+         <p>A Rust based river permit scraper -&nbsp;<a href="https://github.com/rmcsqrd/rustyriver">https://github.com/rmcsqrd/rustyriver</a></p>
+      </form>
+      <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank">
+      <fieldset>
+         <legend><b>Select Rivers to Parse</b></legend>
+         <input name="democheckbox" type="checkbox" value="1" /> Main Salmon </br>
+         <input name="democheckbox" type="checkbox" value="1" /> Middle Fork of Salmon River<br>
+         <input name="democheckbox" type="checkbox" value="1" /> Yampa River (Deerlodge Park)</br>
+         <input name="democheckbox" type="checkbox" value="1" /> Green River (Gates of Ladore)</br>
+         <input name="democheckbox" type="checkbox" value="1" /> San Juan (Mexican Hat to Clay Hills)
+      </fieldset>
+      </br>
+      <fieldset>
+         <legend><b>Select Date Ranges to Scrape (YYYY-MM-DD)</b></legend>
+         Must be formatted exactly as shown, eg: 2020-06-12</br>
+         Start Date&nbsp;<input name="name" type="text" value="YYYY-MM-DD" /></br>
+         End Date&nbsp;&nbsp;<input name="name" type="text" value="YYYY-MM-DD" /></br>
+      </fieldset>
+      </br>
+      <fieldset>
+         <legend><b>Logging Options</b></legend>
+         <span style="text-decoration: underline;">Create Log?</span></br>
+         <input checked="checked" name="sex" type="radio" value="Yes" /> Yes <br />
+         <input name="sex" type="radio" value="No" /> No</br>
+         <span style="text-decoration: underline;">Log file path</span><span style="text-decoration: underline;"></span></br>
+         <input name="name" type="text" value="" />
+      </fieldset>
+      </br>
+      <fieldset>
+         <legend><b>Email Options</b></legend>
+         Enter email addresses separated by newline</br>
+         <textarea cols="60" rows="5"></textarea>
+      </fieldset>
+      </br>
+      <button type="submit" value="Submit">Save Configuration</button>
+      <button type="submit" value="Submit">Begin Scraping</button>
 
-h1 {
-  color: maroon;
-  margin-left: 40px;
-}
-</style>
-</head>
-<body>
 
-<form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank">
-<h2><strong>rustyriver</strong></h2>
-<p>A Rust based river permit scraper -&nbsp;<a href="https://github.com/rmcsqrd/rustyriver">https://github.com/rmcsqrd/rustyriver</a></p>
-</form><form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank"><fieldset><legend></legend><b>Select Rivers to Parse</b></fieldset><fieldset><input name="democheckbox" type="checkbox" value="1" /> Main Salmon</fieldset><fieldset><input name="democheckbox" type="checkbox" value="1" /> Middle Fork of Salmon River</fieldset><fieldset><input name="democheckbox" type="checkbox" value="1" /> Yampa River (Deerlodge Park)</fieldset><fieldset><input name="democheckbox" type="checkbox" value="1" /> Green River (Gates of Ladore)</fieldset><fieldset><input name="democheckbox" type="checkbox" value="1" /> San Juan (Mexican Hat to Clay Hills)</fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset><label for="name">Select Date Ranges to Scrape (YYYY-MM-DD)</label></fieldset><fieldset>Must be formatted exactly as shown, eg: 2020-06-12</fieldset><fieldset>Start Date&nbsp;<input name="name" type="text" value="YYYY-MM-DD" /></fieldset><fieldset>End Date&nbsp;&nbsp;<input name="name" type="text" value="YYYY-MM-DD" /></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset><label for="name">Logging Options</label></fieldset><fieldset><span style="text-decoration: underline;">Create Log?</span></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset><input checked="checked" name="sex" type="radio" value="Yes" /> Yes <br /> <input name="sex" type="radio" value="No" /> No</fieldset><fieldset></fieldset><fieldset><span style="text-decoration: underline;">Log file path</span><span style="text-decoration: underline;"></span></fieldset><fieldset><input name="name" type="text" value="Frank" /></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset><button type="submit" value="Submit">Begin Scraping</button></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset><fieldset></fieldset></form><form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank"><fieldset><legend>&nbsp;</legend></fieldset></form>
-
-</body>
+   </body>
 </html>
